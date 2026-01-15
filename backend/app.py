@@ -10,7 +10,7 @@ import traceback
 app = Flask(__name__)
 CORS(app)
 # Configure Gemini API
-GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', 'AIzaSyBqAHHGqJgvci0bAXe4zwS52troKn90548')
+GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', '')
 genai.configure(api_key=GEMINI_API_KEY)
 # Initialize database
 init_db()
